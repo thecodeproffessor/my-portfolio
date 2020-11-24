@@ -1,0 +1,45 @@
+<div class="load-data">
+    <div class="block-content">
+        <div class="project-head">
+            <h1 class="block-title">LRDDL (Construction Company)</h1>
+            <div class="tags"><span>Category : </span> Wed development (HTML and Node.js)</div>
+            <div class="tags"><span>Client : </span> LRDDL</div>
+            <div class="tags"><span>Completion : </span> August 2020</div>
+            <div class="tags"><span>Role : </span> Web Developer</div>
+        </div>
+        <p class="project-description">
+            LRDDL is a Construction company and it website was built with pure HTMl/CSS with node implementation and was hosted on Whogohost Hosting Services. its elegant and user friendly with great mobile responsiveness.
+        </p>
+        <div class="project-media row">
+            <div class="col-md-8">
+                <img src="images/portfolio/masonry/002.jpg" alt="" />
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12 btn-email">
+                <a class="btn lowercase" href="https://lrddl.com/" target="_blank">www.lrddl.com</a>
+            </div>
+        </div>
+
+        <div class="project-nav text-center">
+            <span class="float-left">
+                <a class="open-project" href="project-1.html">&leftarrow; Previous Project</a>
+            </span>
+            <span class="">
+                <a id="close-project" href="#"><i class="ion-grid"></i></a>
+            </span>
+            <span class="float-right">
+                <a class="open-project" href="project-3.html">Next Project &rightarrow; </a>
+            </span>
+        </div>
+    </div>
+
+
+    <script>
+        $('#close-project').on('click', function() {
+            $('.content-blocks.pop').removeClass('showx');
+            $('.inline-menu-container').addClass('showx');
+            $('.content-blocks.pop section').empty();
+        });
+    </script>
+</div>

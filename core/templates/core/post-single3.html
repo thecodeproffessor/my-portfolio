@@ -1,0 +1,51 @@
+<div id="blog-header" style="background: url({{ blog.image.url }}); background-size: cover;">
+    <div class="overlay"></div>
+    <div class="single-post-title">
+        <h1>{{ blog.title }}</h1>
+        <p class="post-info">
+            <span class="post-author">{{ blog.author }}</span>
+            <span class="slash"></span>
+            <span class="post-date">{{ blog.date_posted }}</span>
+            <span class="slash"></span>
+            {% for cat in blog.categories.all %}
+            <span class="post-catetory">{{ cat }}</span>
+            {% endfor %}
+        </p>
+    </div>
+</div>
+<div class="block-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="single-post">
+                <div class="post">
+                    <div class="post-body">
+                        <p>{{ blog.content| safe}}</p>
+                    </div>
+                    <div class="author-box row">
+                        <div class="col-sm-2">
+                            <img src="{{ blog.author_img.url }}" class="rounded-circle" alt="..." />
+                        </div>
+                        <div class="col-sm-10">
+                            <h3>{{ blog.author }}<span> | thecodeproffessor</span></h3>
+                            <p>{{ blog.summary_text }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.open-post').on('click', function () {
+        var postUrl = $(this).attr("href");
+        $('.inline-menu-container').removeClass('showx');
+        $('.content-blocks.pop').addClass('showx');
+        $('.content-blocks.pop section').load(postUrl)
+        return false;
+    });
+    $('#close-post').on('click', function () {
+        $('.content-blocks.pop').removeClass('showx');
+        $('.inline-menu-container').addClass('showx');
+        $('.content-blocks.pop section').empty();
+    });
+</script>

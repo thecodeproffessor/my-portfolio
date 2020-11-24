@@ -1,0 +1,50 @@
+<!-- {% extends 'core/base.html' %}
+
+{% block content %} -->
+
+<div class="load-data">
+    <div class="block-content">
+        <div class="project-head">
+            <h1 class="block-title">{{ post.name }}</h1>
+            <div class="tags"><span>Category : </span> Wordpress</div>
+            <div class="tags"><span>Client : </span> {{ post.client }}</div>
+            <div class="tags"><span>Completion : </span> {{ post.completion }}</div>
+            <div class="tags"><span>Role : </span>{{ post.role}}</div>
+        </div>
+        <p class="project-description">
+            {{ post.description }}
+        </p>
+        <div class="project-media row">
+            <div class="col-md-6">
+                <img src="{{ post.image.url }}" alt="" />
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12 btn-email">
+                <a class="btn lowercase" href="{{ post.website_link }}" target="_blank">{{ post.name }}</a>
+            </div>
+        </div>
+        <div class="project-nav text-center">
+            <span class="float-left">
+                <a class="open-project" href="project-8.html">&leftarrow; Previous Project</a>
+            </span>
+            <span class="">
+                <a id="close-project" href="#"><i class="ion-grid"></i></a>
+            </span>
+            <span class="float-right">
+                <a class="open-project" href="project-2.html">Next Project &rightarrow; </a>
+            </span>
+        </div>
+    </div>
+
+
+    <script>
+        $('#close-project').on('click', function() {
+            $('.content-blocks.pop').removeClass('showx');
+            $('.inline-menu-container').addClass('showx');
+            $('.content-blocks.pop section').empty();
+        });
+    </script>
+</div>
+<!-- 
+{% endblock %} -->

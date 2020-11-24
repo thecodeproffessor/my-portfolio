@@ -1,0 +1,411 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="preloader-left"></div>
+    <div class="inline-menu-container">
+        <span class="status">Backend Web Develooper | Wordpress Dev</span>
+        <ul class="inline-menu">
+            <li class="about menu-item">Resume</li>
+            <li class="portfolio menu-item">Portfolio</li>
+            <li class="blog menu-item">Articles</li>
+            <li class="contact menu-item">Contact</li>
+            <li id="close" class="menu-item"><i class="ion-ios-close-empty"></i></li>
+        </ul>
+    </div>
+
+    <section class="home">
+        <div id="lionhero" class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="slide one"></div>
+            </div>
+            <div class="item">
+                <div class="slide two"></div>
+            </div>
+            <div class="item">
+                <div class="slide three"></div>
+            </div>
+            <div class="item">
+                <div class="slide four"></div>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="name-block" style="margin-top: 10px;">
+                <div class="name-block-container ">
+                    <h1><span>Hi, I'm</span>
+                        <div style="color:white !important; text-shadow: #002 1px 1px 10px;">Daniel Ajayi</div>
+                    </h1>
+                    <h2 style="font-weight: 600;color: whitesmoke;  text-shadow: rgba(0,0,0,.5) 1px 1px 10px;">Wordpress & Backend Developer</h2>
+                    <h5><span style="line-height: normal; color: #fefefe;">I Turn Ideas into Reality</span></h5>
+                    <a target="_blank" href="https://drive.google.com/file/d/1VtRvBCCqmWrZuWcWkfKlR6vhfaqjiI8m/view" download class="btn btn-download">Download Resume</a>
+                    <ul class="social d-flex">
+                        <li><a href="https://api.whatsapp.com/send?phone=2349020637708&amp;text=Hello%20Daniel" target="_blank"><i class="mdi mdi-whatsapp"></i></a></li>
+                        <li><a href="https://www.instagram.com/thecodeproffessor/" target="_blank"><i class="mdi mdi-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/thecodeproffess" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/daniel-ajayi-21833714a/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-blocks" style="margin-top: 10px;">
+                <div class="about-block menu-block" style="background: rgba(12, 214, 103, 0.371);">
+                    <div class="about-block-container">
+                        <h2 class="about menu-item">Resume</h2>
+                    </div>
+                </div>
+                <div class="portfolio-block menu-block " style="background: rgba(0,0,10,.5);">
+                    <div class="portfolio-block-container">
+                        <h2 class="portfolio menu-item">Portfolio</h2>
+                    </div>
+                </div>
+                <div class="blog-block  menu-block" style="background: rgba(12, 214, 103, 0.371);">
+                    <div class="blog-block-container">
+                        <h2 class="blog menu-item">Articles</h2>
+                    </div>
+                </div>
+                <div class="contact-block  menu-block" style="background: rgba(0,0,10,.5);">
+                    <div class="contact-block-container">
+                        <h2 class="contact menu-item">Contact</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content-blocks about ">
+                <section class="content" id="about">
+                    <div class="block-content ">
+                        <h3 class="block-title">About Me</h3>
+                        <h6 class="subheading">{{ about.intro_text }}, the <strong>{{ about.strong_text }}</strong> from Nigeria.<br>{{ about.br_text }}<br> {{ about.first_paragraph }}
+                        </h6>
+                        <p>{{ about.second_paragraph }} </p>
+                        <div class="info-list row">
+                            <div class="col-sm-6"><span>Name : </span>DANIEL AJAYI
+                            </div>
+                            <div class="col-sm-6"><span>Date of birth : </span> August 8 </div>
+                            <div class="col-sm-6"><span>Email : </span><a href="mailto: thecodeproffessor@gmail.com"> thecodeproffessor@gmail.com</a></div>
+                            <div class="col-sm-6"><span>Phone : </span><i class="mdi mdi-whatsapp"></i> <a href="tel:+2349020637708">
+                                +2349020637708</a></div>
+                            <!-- <div class="col-sm-6"><span>Skype : </span></div> -->
+
+                        </div>
+                        <img class="sign" src="{% static 'core/images/signature.png' %}" alt="" />
+                    </div>
+                    <div class="block-content">
+                        <h3 class="block-title">Major Skills</h3>
+
+                        <label class="progress-bar-label">Wordpress - <span>2 years experience</span></label>
+                        <div class="progress">
+                            <div style="width: 96%;" class="progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100">
+                                <span>96%</span>
+                            </div>
+                        </div>
+                        <label class="progress-bar-label">Python|Django - <span>1 year experience</span></label>
+                        <div class="progress">
+                            <div style="width: 85%;" class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <label class="progress-bar-label">HTML&amp;CSS - <span>2 years experience</span></label>
+                        <div class="progress">
+                            <div style="width: 90%;" class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                        <label class="progress-bar-label">Javascript - <span>1 years experience</span></label>
+                        <div class="progress">
+                            <div style="width: 67%;" class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+                                <span>67%</span>
+                            </div>
+                        </div>
+                        <label class="progress-bar-label">PostgreSQL - <span>1 years experience</span></label>
+                        <div class="progress">
+                            <div style="width: 70%;" class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                        <label class="progress-bar-label">AWS - <span>1 years experience</span></label>
+                        <div class="progress">
+                            <div style="width: 70%;" class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                        <label class="progress-bar-label">Bootstrap - <span>2 years experience</span></label>
+                        <div class="progress">
+                            <div style="width: 95%;" class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                        <h5><b>Other skills :</b>SEO, Creative thinking, UX writing and Research and SQL
+                        </h5>
+                    </div>
+                    <div class="block-content">
+                        <h3 class="block-title">Experience</h3>
+                        <div class="timeline experience">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="exp-holder">
+                                        {% for exp in exp %}
+                                        <div class="exp">
+                                            <div class="hgroup">
+                                                <h4><span>{{ exp.skill_companyname }} </span> @ {{ exp.company_username }}</h4>
+                                                <h5> {{ exp.duration }}</h5>
+
+                                            </div>
+                                            <p>{{ exp.company_description}}
+                                            </p>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                    <h5>Check out all my works and more on my <a class="menu-item portfolio" style="color: blue;">portfolio</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content">
+                        <h3 class="block-title">Certificate</h3>
+                        <div class="timeline education">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="exp-holder">
+                                        <div class="exp">
+                                            <div class="hgroup">
+                                                <h4>Python 3 | <span>Sololearn</span></h4>
+                                                <h5>Issued 12 February, 2020</h5>
+                                            </div>
+                                            <p>This is to certify that
+                                            Ajayi Daniel
+                                            Oluwagbenga
+                                            has successfully completed the
+                                                <br> Python 3 Tutorial course</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-content">
+                        <h3 class="block-title">Services</h3>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 service">
+                                <div class="service-icon">
+                                    <i class="ion-laptop"></i>
+                                </div>
+                                <h4>Wordpress</h4>
+                                <p>Let's bring your product ideas to life through design and UX development ranging from mobile apps to web-apps</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 service">
+                                <div class="service-icon">
+                                    <i class="ion-pie-graph"></i>
+                                </div>
+                                <h4>Web Development</h4>
+                                <p>The web is vast, i build responsive web pages with good seo optimization and awesome designs to achieve your goals </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="block-content">
+                        <h3 class="block-title">Testimonials</h3>
+                        <div class="row">
+                            <div id="liontestimonial" class="owl-carousel owl-theme">
+                                {% for test in test %}
+                                <div class="item testimonials" style="padding: 10px;">
+                                    <img src="{{ test.image.url }}" alt="">
+                                    <blockquote>{{ test.testimonial }}
+                                        <p class="quote"><span>{{ test.founder_name }}</span> - {{ test.founder_title }}</p>
+                                    </blockquote>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-12 btn-email">
+                            <a class="btn lowercase" href="mailto:thecodeproffessor@gmail.com">thecodeproffessor@gmail.com</a>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <div class="content-blocks portfolio">
+            <section class="content">
+                <div class="block-content">
+                    <h3 class="block-title">Portfolio</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="filters">
+                                <span>Filters :</span>
+                                <ul id="filters">
+                                    <li class="active" data-filter="*">All</li>
+                                    {% for cat in tags.categories.all %}
+                                    <li data-filter=".{{ cat }}">{{ cat }}</li>
+                                    {% endfor %}
+                                    <!-- <li data-filter=".webdesign">Wordpress</li>
+                                    <li data-filter=".design">Others</li> -->
+                                </ul>
+                            </div>
+
+                            <div class="portfolio-container row isotope" id="portfolio-container">
+                                <!-- WORK 1 START -->
+                                {% for portfolio in portfolio %}
+                                    {% for cat in portfolio.categories.all %}
+                                        <div class="col-md-6 col-sm-6 col-xs-12 portfolio-item {{ cat }}">
+                                            <a class="open-project" href="{% url 'detail' portfolio.id %}">
+                                                <div class="portfolio-column">
+                                                    <div class="portfolio-hover ">
+                                                        <div class="portfolio-content">
+                                                            <h2>{{ portfolio.name }}</h2>
+                                                            <hr>
+                                                            <p>{{ cat }}</p>
+                                                        </div>
+                                                        <div class="portfolio-overlay"></div>
+                                                    </div>
+                                                    <img src="{{ portfolio.image.url }}" alt="">
+
+
+                                                </div>
+                                            </a>
+                                        </div>
+                                    {% endfor %}
+                                {% endfor %}
+                                <!-- WORK 1 END -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-12 btn-email">
+                        <a class="btn lowercase">thecodeproffessor@gmail.com</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="content-blocks blog">
+            <section class="content">
+                <div class="block-content">
+                    <h3 class="block-title">My Blog</h3>
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            {% for blog in blog %}
+                            <div class="post">
+                                <div class="post-thumbnail">
+                                    <a class="open-post" href="{% url 'blog-view' blog.id %}">
+                                        <img src="{{ blog.image.url }}" alt="">
+                                    </a>
+                                </div>
+                                <div class="post-title">
+                                    <a class="open-post" href="{% url 'blog-view' blog.id %}">
+                                        <h2>{{ blog.title }}</h2>
+                                    </a>
+                                    <p class="post-info">
+                                        <span class="post-author">Posted by {{ blog.author }}</span>
+                                        <span class="slash"></span>
+                                        <span class="post-date">{{ blog.date_posted|date:"F d, Y"}}</span>
+                                        <span class="slash"></span>
+                                        {% for cat in blog.categories.all %}
+                                        <span class="post-catetory">{{ cat }}</span>
+                                        {% endfor %}
+                                    </p>
+                                </div>
+                                <div class="post-body">
+                                    <p> {{ blog.content|truncatechars_html:100| safe }}</p>
+                                    <a class="btn open-post" href="{% url 'blog-view' blog.id %}">Read More</a>
+                                </div>
+                            </div>
+                            {% endfor %}
+
+
+                            <div class="text-center">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                    </li>
+
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <!-- <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li> -->
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="content-blocks contact">
+            <section class="content">
+                <div class="block-content">
+                    <h3 class="block-title">Get in touch</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- <?=$thankYou ?> -->
+                            <form class="contact-form" action="javascript:sendMail();" method="post">
+                                <div class="form-control-wrap">
+                                    <div id="message" class="alert alert-danger alert-dismissible fade"></div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="fname" placeholder="Name*" name="fname">
+                                    </div>
+                                    <div class="form-group mar-top-40">
+                                        <input type="email" class="form-control" id="email" placeholder="email*" name="email">
+                                    </div>
+                                    <div class="form-group mar-top-60">
+                                        <textarea class="form-control" rows="10" name="comment" id="comment" placeholder="Your Message"></textarea>
+                                    </div>
+                                    <div class="form-group mar-top-40">
+                                        <button type="submit" name="submit" class="btn v7">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-md-5 offset-md-1">
+                            <div class="contact-content">
+                                <div class="contact-icon">
+                                    <i class="ion-ios-location-outline"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Address</h5>
+                                    <p>Jikwoyi New Karu, Abuja </p>
+                                </div>
+                            </div>
+                            <div class="contact-content">
+                                <div class="contact-icon">
+                                    <i class="ion-ios-telephone-outline"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Call Us</h5>
+                                    <p> <a href="https://api.whatsapp.com/send?phone=2349020637708&amp;text=Hello%20Daniel"><i class="mdi mdi-whatsapp"></i> +2349020637708,</a><a href="tel:+2349020637708">  +2349020637708</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-content">
+                                <div class="contact-icon">
+                                    <i class="ion-ios-email-outline"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Enquiries</h5>
+                                    <p>thecodeproffessor@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <!--Google Map-->
+                            <div id="map"></div>
+                            <!--Google Map End-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="content-blocks pop">
+            <div id="close-pop" class="close-pop">Close <i class="ion-ios-close-empty"></i></div>
+            <section class="content"></section>
+        </div>
+        </div>
+    </section>
+
+{% endblock content %}
