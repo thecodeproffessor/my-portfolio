@@ -28,7 +28,7 @@ SECRET_KEY = 'vc-necu%@n88dws+7aj_0uhtsh(&o&_av+w!nqmuq$5p0w!t*@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['theajayidaniel.herokuapp.com']
 
 
 # Application definition
