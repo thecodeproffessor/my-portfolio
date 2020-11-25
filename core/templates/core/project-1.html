@@ -1,30 +1,29 @@
-<!-- {% extends 'core/base.html' %}
-
-{% block content %} -->
-
 <div class="load-data">
     <div class="block-content">
         <div class="project-head">
-            <h1 class="block-title">{{ post.name }}</h1>
+            <h1 class="block-title">Furaha Web App</h1>
             <div class="tags"><span>Category : </span> Wordpress</div>
-            <div class="tags"><span>Client : </span> {{ post.client }}</div>
-            <div class="tags"><span>Completion : </span> {{ post.completion }}</div>
-            <div class="tags"><span>Role : </span>{{ post.role}}</div>
+            <div class="tags"><span>Client : </span> Prodevel</div>
+            <div class="tags"><span>Completion : </span> August 2020</div>
+            <div class="tags"><span>Role : </span>Wordpress Developer</div>
         </div>
         <p class="project-description">
-            {{ post.description }}
+            Furaha Web-app is a platform based in the UK for beauty artisans. You can find shapers ranging from makeup artist to nail technicians, diet coaches and many more. it was built with Wordpress and i developed the places and categories part of this platform.
+            i am also redesigning its mobile app to give a better user experinece, and would lauch a new beta version soon.
         </p>
         <div class="project-media row">
             <div class="col-md-6">
-                <img src="{{ post.image.url }}" alt="" />
+                <img src="images/portfolio/masonry/001.jpg" alt="" />
+            </div>
+            <div class="col-md-6">
+                <img src="images/portfolio/masonry/0011.jpg" alt="" />
             </div>
         </div>
         <div class="row text-center">
             <div class="col-md-12 btn-email">
-                <a class="btn lowercase" href="{{ post.website_link }}" target="_blank">{{ post.name }}</a>
+                <a class="btn lowercase" href="https://furaha.co.uk/" target="_blank">Furaha Site</a>
             </div>
         </div>
-
         <div class="project-nav text-center">
             <span class="float-left">
                 <a class="open-project" href="project-8.html">&leftarrow; Previous Project</a>
@@ -36,7 +35,6 @@
                 <a class="open-project" href="project-2.html">Next Project &rightarrow; </a>
             </span>
         </div>
-
     </div>
 
 
@@ -48,5 +46,3 @@
         });
     </script>
 </div>
-<!-- 
-{% endblock %} -->
