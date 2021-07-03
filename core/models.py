@@ -61,7 +61,7 @@ class Portfolios(models.Model):
     completion = models.CharField(max_length=50)
     role = models.CharField(max_length=50)
     description = models.TextField()
-    website_link = models.URLField(max_length=150)
+    website_link = models.URLField(default="enter link", max_length=150, blank=True, null=True)
 
     def __str__(self):
         return self.name
